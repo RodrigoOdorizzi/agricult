@@ -2,21 +2,30 @@
 
     <?php include 'header.php' ?>
 
+
+
+
+
     <!-- Slider Start -->
     <section class="slider">
         <div class="container">
             <div class="row tp-1">
                 <div class="col-md-12">
                     <div class="block">
-                        <h1 class="animated fadeInUp">Produtos coloniais <br> </h1>
-                        <p class="animated fadeInUp">Comercializando produtos do agricultor, para você.<br> Faça seu cadastro para divulgar seus produtos</p>
-                        <a href="home.php" target="_blank" class="btn btn-main btn-m animated fadeInUp ">Cadastre-se</a>
 
 
 
+
+                        <h1 class=" animated fadeInUp">Faça seu cadastro aqui <br> </h1>
+
+                        <p class="animated fadeInUp">Eu sou</p>
+
+                        <!--     <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank" class="btn btn-main animated fadeInUp">Free Bootstrap Templates</a>
+-->
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -24,23 +33,57 @@
     <section class="about section">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-12 col-sm-12">
                     <div class="block">
                         <div class="section-title">
                             <h2>Praticidade</h2>
                             <p> Tenha acesso a vários produtores de vários locais diferentes</p>
                         </div>
                         <p> Tenha várias opções de produtos</p>
-
-
-
                     </div>
+
+
+                    <div class="col-md-8 row shuffle-wrapper">
+                        <div class="col-md-4 portfolio-item shuffle-item " data-groups="[&quot;design&quot;]">
+                            <img src="images/portfolio/work1.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-content">
+                                    <a href="images/portfolio/work1.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                                    <a class="h3" href="portfolio-single.html">Rio Furniture</a>
+                                    <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
+                            <img src="images/portfolio/work2.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-content">
+                                    <a href="images/portfolio/work2.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                                    <a class="h3" href="portfolio-single.html">Rio Furniture</a>
+                                    <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div><!-- .col-md-7 close -->
+
+                <!-- 
                 <div class="col-md-5 col-sm-12">
                     <div class="block">
                         <img src="images/wrapper-img.png" alt="Img">
                     </div>
-                </div><!-- .col-md-5 close -->
+                </div>
+                
+                -->
+
+                <!-- .col-md-5 close -->
+
+
             </div>
         </div>
     </section>
@@ -70,56 +113,75 @@
             <div class="row">
                 <div class="section-title">
                     <h2>Anuncie conosco</h2>
-                    <p>Anunciando conosco, suas vendas vão muito mais longe</p>
+                    <p>anunciando conosco, suas vendas vão muito mais longe</p>
                 </div>
             </div>
             <div class="row ">
 
+                <!-- style="background-color:red" -->
 
                 <div class="col-sm-6 col-md-3">
                     <div class="service-item">
-                        <i class="ion-ios-nutrition"></i>
-                        <h4>Produtos</h4>
-                        <p>Produtos direto do agricultor </p>
+                        <i class="icon ion-coffee"></i>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="service-item">
-                        <i class="ion-ios-pricetag"></i>
-                        <h4>Preço justo</h4>
-                        <p>Preço justo</p>
+                        <i class="ion-compass"></i>
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
                     </div>
                 </div>
-
                 <div class="col-sm-6 col-md-3">
                     <div class="service-item">
-                        <i class="ion-ios-pricetag"></i>
-                        <h4>Preço justo</h4>
-                        <p>Preço justo</p>
+                        <i class="ion-image"></i>
+                        <h4>App Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
                     </div>
                 </div>
-
-
                 <div class="col-sm-6 col-md-3">
                     <div class="service-item">
-                        <i class="ion-ios-pricetag"></i>
-                        <h4>Preço justo</h4>
-                        <p>Preço justo</p>
+                        <i class="ion-bug"></i>
+                        <h4>Start Up</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
                     </div>
                 </div>
-
-
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <i class="ion-headphone"></i>
+                        <h4>Logo Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <i class="ion-leaf"></i>
+                        <h4>Development</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <i class="ion-planet"></i>
+                        <h4>Brand Identity</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <i class="ion-earth"></i>
+                        <h4>Brand Identity</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-
-
     <!-- Call to action Start -->
 
-    <!--
-
-    <section class="call-to-action bg-1 section-sm overly">
+    <section class="call-to-action bg-1 section-sm overly ho">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -133,13 +195,7 @@
         </div>
     </section>
 
-
--->
     <!-- Content Start -->
-
-
-    <!--
-
     <section class="testimonial">
         <div class="container">
             <div class="row">
@@ -225,8 +281,6 @@
         </div>
     </section>
 
-
--->
     <?php include 'footer.php' ?>
 
 
