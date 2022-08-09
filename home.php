@@ -7,21 +7,23 @@
 
 
     <!-- Slider Start -->
-    <section class="slider">
-        <div class="container">
+
+
+
+
+    <section class="slider pro">
+        <div class="container cad">
             <div class="row tp-1">
                 <div class="col-md-12">
                     <div class="block">
 
-
-
-
                         <h1 class=" animated fadeInUp">Faça seu cadastro aqui <br> </h1>
 
-                        <p class="animated fadeInUp">Eu sou</p>
 
-                        <!--     <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank" class="btn btn-main animated fadeInUp">Free Bootstrap Templates</a>
--->
+                        <!-- 
+                         <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank" class="btn btn-main animated fadeInUp">Free Bootstrap Templates</a>
+ -->
+
                     </div>
                 </div>
             </div>
@@ -29,22 +31,20 @@
         </div>
     </section>
 
+
+
     <!-- Wrapper Start -->
-    <section class="about section">
+    <section class="about section" ;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <div class="block">
-                        <div class="section-title">
-                            <h2>Praticidade</h2>
-                            <p> Tenha acesso a vários produtores de vários locais diferentes</p>
-                        </div>
-                        <p> Tenha várias opções de produtos</p>
+
+                    <div class=" section-title cad">
+                        <h2>Selecione uma opção</h2>
                     </div>
+                    <div class="col-md-12 row shuffle-wrapper">
 
-
-                    <div class="col-md-8 row shuffle-wrapper">
-                        <div class="col-md-4 portfolio-item shuffle-item " data-groups="[&quot;design&quot;]">
+                        <div class=" col-md-6 portfolio-item shuffle-item " data-groups=" [&quot;design&quot;]">
                             <img src="images/portfolio/work1.jpg" alt="">
                             <div class="portfolio-hover">
                                 <div class="portfolio-content">
@@ -52,10 +52,16 @@
                                     <a class="h3" href="portfolio-single.html">Rio Furniture</a>
                                     <p>Labore et dolore magna aliqua. Ut enim ad </p>
                                 </div>
+
+
+                            </div>
+                            <div class=" section-title cad">
+                                <h2>Consumidor</h2>
                             </div>
                         </div>
-                        <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
+                        <div class="col-md-6 portfolio-item dir shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
                             <img src="images/portfolio/work2.jpg" alt="">
+
                             <div class="portfolio-hover">
                                 <div class="portfolio-content">
                                     <a href="images/portfolio/work2.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
@@ -63,6 +69,11 @@
                                     <p>Labore et dolore magna aliqua. Ut enim ad </p>
                                 </div>
                             </div>
+
+                            <div class=" section-title cad">
+                                <h2>Produtor</h2>
+                            </div>
+
                         </div>
                     </div>
 
