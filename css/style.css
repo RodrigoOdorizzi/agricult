@@ -858,7 +858,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .slider.pro {
   background: url("../images/backgrounds/produto.jpg") no-repeat;
-  padding: 0 0 0 0;
+  padding: 0px 0 0px 0;
   position: relative;
 }
 
@@ -1223,10 +1223,7 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 100%;
 }
 
-.tp-1 {
-  margin-top: -150px;
-
-}
+.tp-1 {}
 
 
 .contact-form .block .form-group-2 {
@@ -2862,3 +2859,11 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  background-color: lightblue;
+  margin-top: 20px;
+}

@@ -34,7 +34,7 @@
 
 
     <!-- Wrapper Start -->
-    <section class="about section" ;">
+    <section class="about section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -42,48 +42,54 @@
                     <div class=" section-title cad">
                         <h2>Selecione uma opção</h2>
                     </div>
-                    <div class="col-md-12 row shuffle-wrapper">
-
-                        <div class=" col-md-6 portfolio-item shuffle-item " data-groups=" [&quot;design&quot;]">
-                            <img src="images/portfolio/work1.jpg" alt="">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-content">
-                                    <a href="images/portfolio/work1.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
-                                    <a class="h3" href="portfolio-single.html">Rio Furniture</a>
-                                    <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                                </div>
 
 
-                            </div>
-                            <div class=" section-title cad">
-                                <h2>Consumidor</h2>
+
+                    <div class=" col-md-6 portfolio-item shuffle-item  " data-groups=" [&quot;design&quot;]">
+
+                        <img src="images/portfolio/work1.jpg">
+
+
+
+                        <div class="portfolio-hover">
+                            <div class="portfolio-content">
+                                <h3>consumidor</h3>
                             </div>
                         </div>
-                        <div class="col-md-6 portfolio-item dir shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
-                            <img src="images/portfolio/work2.jpg" alt="">
 
-                            <div class="portfolio-hover">
-                                <div class="portfolio-content">
-                                    <a href="images/portfolio/work2.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
-                                    <a class="h3" href="portfolio-single.html">Rio Furniture</a>
-                                    <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                                </div>
+
+
+
+                        <!--     <div class=" section-title cad">
+                                <h2>Consumidor</h2>
+                            </div> -->
+                    </div>
+                    <div class="col-md-6 portfolio-item dir shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
+                        <img src="images/portfolio/work2.jpg" alt="" onclick="myFunction()">
+
+                        <div class="portfolio-hover">
+                            <div class="portfolio-content">
+                                <a href="images/portfolio/work2.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                                <h3>Produtor</h3>
+
                             </div>
-
+                        </div>
+                        <!-- 
                             <div class=" section-title cad">
                                 <h2>Produtor</h2>
                             </div>
-
-                        </div>
+-->
                     </div>
+                </div>
 
 
 
 
+            </div>
 
-                </div><!-- .col-md-7 close -->
+            <!-- .col-md-7 close -->
 
-                <!-- 
+            <!-- 
                 <div class="col-md-5 col-sm-12">
                     <div class="block">
                         <img src="images/wrapper-img.png" alt="Img">
@@ -92,12 +98,145 @@
                 
                 -->
 
-                <!-- .col-md-5 close -->
+            <!-- .col-md-5 close -->
 
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="page-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="post post-single">
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="post-comments-form">
+                            <h3 class="post-sub-heading">Formulario Consumidor</h3>
+
+
+                            <form method="post" action="#" id="form" role="form">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <!-- Name -->
+                                        <input type="text" name="name" id="name" class=" form-control" placeholder="Name *" maxlength="100" required="">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <!-- Email -->
+                                        <input type="email" name="email" id="email" class=" form-control" placeholder="Email *" maxlength="100" required="">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <!-- Website -->
+                                        <input type="text" name="website" id="website" class=" form-control" placeholder="Website" maxlength="100">
+                                    </div>
+                                    <!-- Comment -->
+                                    <div class="form-group col-md-12">
+                                        <textarea name="text" id="text" class=" form-control" rows="6" placeholder="Comment" maxlength="400"></textarea>
+                                    </div>
+                                    <!-- Send Button -->
+                                    <div class="form-group col-md-12">
+                                        <button type="submit" class="btn btn-main ">
+                                            Send comment
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+
+
+
+
+
+
+                        <div class="post-comments-form">
+                            <h3 class="post-sub-heading">Formulario produtor</h3>
+
+
+                            <form method="post" action="#" id="form" role="form">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <!-- Name -->
+                                        <input type="text" name="name" id="name" class=" form-control" placeholder="Name *" maxlength="100" required="">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <!-- Email -->
+                                        <input type="email" name="email" id="email" class=" form-control" placeholder="Email *" maxlength="100" required="">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <!-- Website -->
+                                        <input type="text" name="website" id="website" class=" form-control" placeholder="Website" maxlength="100">
+                                    </div>
+                                    <!-- Comment -->
+                                    <div class="form-group col-md-12">
+                                        <textarea name="text" id="text" class=" form-control" rows="6" placeholder="Comment" maxlength="400"></textarea>
+                                    </div>
+                                    <!-- Send Button -->
+                                    <div class="form-group col-md-12">
+                                        <button type="submit" class="btn btn-main ">
+                                            Send comment
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
 
             </div>
         </div>
     </section>
+
+
+
+
+
+
+    <button onclick="myFunction()">Click Me</button>
+
+    <div id="myDIV1">
+        This is my DIV element.
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+
 
 
     <!--  
