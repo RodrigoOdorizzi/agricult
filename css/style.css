@@ -2075,6 +2075,10 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #655E7A;
 }
 
+.post-comments-form {
+  display: none;
+}
+
 .post-excerpt {
   margin-bottom: 60px;
 }
@@ -2859,11 +2863,3 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
-
-
-#myDIV {
-  width: 100%;
-  padding: 50px 0;
-  background-color: lightblue;
-  margin-top: 20px;
-}

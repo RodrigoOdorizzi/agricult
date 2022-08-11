@@ -45,7 +45,7 @@
 
 
 
-                    <div class=" col-md-6 portfolio-item shuffle-item  " data-groups=" [&quot;design&quot;]">
+                    <div class=" col-md-6 portfolio-item shuffle-item  " data-groups=" [&quot;design&quot;]" onclick="myFunction()">
 
                         <img src="images/portfolio/work1.jpg">
 
@@ -64,12 +64,11 @@
                                 <h2>Consumidor</h2>
                             </div> -->
                     </div>
-                    <div class="col-md-6 portfolio-item dir shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
-                        <img src="images/portfolio/work2.jpg" alt="" onclick="myFunction()">
+                    <div class="col-md-6 portfolio-item dir shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]" onclick="myFunction2()">
+                        <img src="images/portfolio/work2.jpg" alt="">
 
                         <div class="portfolio-hover">
                             <div class="portfolio-content">
-                                <a href="images/portfolio/work2.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
                                 <h3>Produtor</h3>
 
                             </div>
@@ -126,10 +125,8 @@
 
 
 
-
-
-                        <div class="post-comments-form">
-                            <h3 class="post-sub-heading">Formulario Consumidor</h3>
+                        <div class="post-comments-form" id="myDIV1">
+                            <h3 class=" post-sub-heading">Formulario Consumidor</h3>
 
 
                             <form method="post" action="#" id="form" role="form">
@@ -138,14 +135,107 @@
                                         <!-- Name -->
                                         <input type="text" name="name" id="name" class=" form-control" placeholder="Name *" maxlength="100" required="">
                                     </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <!-- sobrename -->
+                                        <input type="text" name="sobrename" id="sobrename" class=" form-control" placeholder="Sobrenome *" maxlength="100" required="">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- fone -->
+                                        <input type="text" name="fone" id="fone" class=" form-control" placeholder="fone *" maxlength="100" required="">
+
+                                    </div>
+
                                     <div class="col-md-6 form-group">
                                         <!-- Email -->
-                                        <input type="email" name="email" id="email" class=" form-control" placeholder="Email *" maxlength="100" required="">
+                                        <input type="text" name="email" id="email" class=" form-control" placeholder="Email *" maxlength="100" required="">
                                     </div>
-                                    <div class="form-group col-md-12">
-                                        <!-- Website -->
-                                        <input type="text" name="website" id="website" class=" form-control" placeholder="Website" maxlength="100">
+
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Endereço -->
+                                        <input type="text" name="endereco" id="endereco" class=" form-control" placeholder="Endereço *" maxlength="100" required="">
                                     </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- número -->
+                                        <input type="text" name="numero" id="numero" class=" form-control" placeholder="Número *" maxlength="100" required="">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Bairro -->
+                                        <input type="text" name="bairro" id="bairro" class=" form-control" placeholder="Bairro *" maxlength="100" required="">
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Cidade -->
+                                        <input type="text" name="cidade" id="cidade" class=" form-control" placeholder="Cidade *" maxlength="100" required="">
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- CEP -->
+                                        <input type="text" name="cep" id="cep" class=" form-control" placeholder="CEP *" maxlength="100" required="">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Estado -->
+                                        <input type="text" name="estado" id="estado" class=" form-control" placeholder="Estado *" maxlength="100" required="">
+                                    </div>
+
+
+
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- CPF -->
+                                        <input type="text" name="cpf" id="cpf" class=" form-control" placeholder="CPF *" maxlength="100" required="">
+                                    </div>
+
+
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- CNPJ -->
+
+                                        Possui CNPJ?
+
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="nao" checked>
+                                            <label class="form-check-label" for="nao">
+                                                Não
+                                            </label>
+
+
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="sim">
+                                            <label class="form-check-label" for="sim">
+                                                Sim
+                                            </label>
+
+
+                                            <div class="form-group col-md-4">
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+
+
+
+
+
+
+
+
                                     <!-- Comment -->
                                     <div class="form-group col-md-12">
                                         <textarea name="text" id="text" class=" form-control" rows="6" placeholder="Comment" maxlength="400"></textarea>
@@ -167,7 +257,7 @@
 
 
 
-                        <div class="post-comments-form">
+                        <div class="post-comments-form" id="myDIV2">
                             <h3 class="post-sub-heading">Formulario produtor</h3>
 
 
@@ -217,21 +307,28 @@
 
 
 
-    <button onclick="myFunction()">Click Me</button>
-
-    <div id="myDIV1">
-        This is my DIV element.
-    </div>
-
-
-
     <script>
         function myFunction() {
             var x = document.getElementById("myDIV1");
-            if (x.style.display === "none") {
+            var y = document.getElementById("myDIV2");
+            if ((x.style.display === "block") || (y.style.display === "block")) {
                 x.style.display = "block";
+                y.style.display = "none";
             } else {
+                x.style.display = "block";
+            }
+        }
+
+
+        function myFunction2() {
+            var x = document.getElementById("myDIV1");
+            var y = document.getElementById("myDIV2");
+            if ((x.style.display === "block") || (y.style.display === "block")) {
                 x.style.display = "none";
+
+                y.style.display = "block";
+            } else {
+                y.style.display = "block";
             }
         }
     </script>
