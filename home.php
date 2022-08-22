@@ -115,16 +115,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="post post-single">
-
-
-
-
-
-
-
-
-
-
                         <div class="post-comments-form" id="myDIV1">
                             <h3 class=" post-sub-heading">Formulario Consumidor</h3>
 
@@ -143,7 +133,188 @@
 
                                     <div class="form-group col-md-6">
                                         <!-- fone -->
-                                        <input type="text" name="fone" id="fone" class=" form-control" placeholder="fone *" maxlength="100" required="">
+                                        <input type="text" name="fone" id="fone" class=" form-control" placeholder="Telefone *" maxlength="100" required="">
+
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <!-- Email -->
+                                        <input type="text" name="email" id="email" class=" form-control" placeholder="Email *" maxlength="100" required="">
+                                    </div>
+
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Endereço -->
+                                        <input type="text" name="endereco" id="endereco" class=" form-control" placeholder="Endereço *" maxlength="100" required="">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- número -->
+                                        <input type="text" name="numero" id="numero" class=" form-control" placeholder="Número *" maxlength="100" required="">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Bairro -->
+                                        <input type="text" name="bairro" id="bairro" class=" form-control" placeholder="Bairro *" maxlength="100" required="">
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Cidade -->
+                                        <input type="text" name="cidade" id="cidade" class=" form-control" placeholder="Cidade *" maxlength="100" required="">
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- CEP -->
+                                        <input type="text" name="cep" id="cep" class=" form-control" placeholder="CEP *" maxlength="100" required="">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Estado -->
+                                        <input type="text" name="estado" id="estado" class=" form-control" placeholder="Estado *" maxlength="100" required="">
+                                    </div>
+
+                                    <!-- senha para usuário -->
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- Estado -->
+                                        <input type="password" name="senha" id="senha" class=" form-control" placeholder="Digite uma senha *" maxlength="100" required="">
+
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- CPF -->
+                                        <input type="text" name="cpf" id="cpf" class=" form-control" placeholder="CPF *" maxlength="100" required="">
+                                    </div>
+
+
+
+                                    <div class="form-group col-md-6">
+                                        <!-- CNPJ -->
+
+
+
+                                        <div class="form-group col-md-6">
+
+
+                                            Possui CNPJ?
+
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="nao" value="nao" checked>
+                                                <label class="form-check-label" for="nao">
+                                                    Não
+                                                </label>
+
+
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sim" value="sim">
+                                                <label class="form-check-label" for="sim">
+                                                    Sim
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-md-6">
+
+                                            <input type="text" name="cnpj" id="cnpj" class=" form-control" placeholder="CNPJ *" maxlength="100" required="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Send Button -->
+                                    <div class="form-group col-md-12">
+                                        <button type="submit" class="btn btn-main ">
+                                            Send comment
+                                        </button>
+                                    </div>
+
+                            </form>
+
+
+                        </div>
+
+
+
+
+
+
+                        <div class="post-comments-form" id="myDIV2">
+                            <h3 class="post-sub-heading">Formulario produtor</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <form method="post" action="#" id="form2" role="form">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <!-- Name -->
+                                        <input type="text" name="name" id="name" class=" form-control" placeholder="Name *" maxlength="100" required="">
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <!-- sobrename -->
+                                        <input type="text" name="sobrename" id="sobrename" class=" form-control" placeholder="Sobrenome *" maxlength="100" required="">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- fone -->
+                                        <input type="text" name="fone" id="fone" class=" form-control" placeholder="Telefone *" maxlength="100" required="">
 
                                     </div>
 
@@ -187,6 +358,11 @@
                                     </div>
 
 
+                                    <div class="form-group col-md-6">
+                                        <!-- foto de perfil-->
+                                        <input type="text" name="estado" id="estado" class=" form-control" placeholder="Estado *" maxlength="100" required="">
+                                    </div>
+
 
 
 
@@ -195,98 +371,48 @@
                                         <input type="text" name="cpf" id="cpf" class=" form-control" placeholder="CPF *" maxlength="100" required="">
                                     </div>
 
-
-
-
                                     <div class="form-group col-md-6">
                                         <!-- CNPJ -->
 
-                                        Possui CNPJ?
 
 
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="nao" checked>
-                                            <label class="form-check-label" for="nao">
-                                                Não
-                                            </label>
+                                        <div class="form-group col-md-6">
 
 
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="sim">
-                                            <label class="form-check-label" for="sim">
-                                                Sim
-                                            </label>
+                                            Possui CNPJ?
 
 
-                                            <div class="form-group col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="nao" value="nao" checked>
+                                                <label class="form-check-label" for="nao">
+                                                    Não
+                                                </label>
+
+
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sim" value="sim">
+                                                <label class="form-check-label" for="sim">
+                                                    Sim
+                                                </label>
                                             </div>
-
                                         </div>
 
+                                        <div class="form-group col-md-6">
 
-
-
-
+                                            <input type="text" name="cnpj" id="cnpj" class=" form-control" placeholder="CNPJ *" maxlength="100" required="">
+                                        </div>
                                     </div>
 
-
-
-
-
-
-
-
-
-                                    <!-- Comment -->
-                                    <div class="form-group col-md-12">
-                                        <textarea name="text" id="text" class=" form-control" rows="6" placeholder="Comment" maxlength="400"></textarea>
-                                    </div>
                                     <!-- Send Button -->
                                     <div class="form-group col-md-12">
                                         <button type="submit" class="btn btn-main ">
                                             Send comment
                                         </button>
                                     </div>
-                                </div>
+
                             </form>
 
 
-                        </div>
 
-
-
-
-
-
-                        <div class="post-comments-form" id="myDIV2">
-                            <h3 class="post-sub-heading">Formulario produtor</h3>
-
-
-                            <form method="post" action="#" id="form" role="form">
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <!-- Name -->
-                                        <input type="text" name="name" id="name" class=" form-control" placeholder="Name *" maxlength="100" required="">
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <!-- Email -->
-                                        <input type="email" name="email" id="email" class=" form-control" placeholder="Email *" maxlength="100" required="">
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        <!-- Website -->
-                                        <input type="text" name="website" id="website" class=" form-control" placeholder="Website" maxlength="100">
-                                    </div>
-                                    <!-- Comment -->
-                                    <div class="form-group col-md-12">
-                                        <textarea name="text" id="text" class=" form-control" rows="6" placeholder="Comment" maxlength="400"></textarea>
-                                    </div>
-                                    <!-- Send Button -->
-                                    <div class="form-group col-md-12">
-                                        <button type="submit" class="btn btn-main ">
-                                            Send comment
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
 
 
                         </div>
@@ -306,32 +432,6 @@
 
 
 
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myDIV1");
-            var y = document.getElementById("myDIV2");
-            if ((x.style.display === "block") || (y.style.display === "block")) {
-                x.style.display = "block";
-                y.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
-
-        function myFunction2() {
-            var x = document.getElementById("myDIV1");
-            var y = document.getElementById("myDIV2");
-            if ((x.style.display === "block") || (y.style.display === "block")) {
-                x.style.display = "none";
-
-                y.style.display = "block";
-            } else {
-                y.style.display = "block";
-            }
-        }
-    </script>
 
 
 
@@ -529,6 +629,46 @@
     </section>
 
     <?php include 'footer.php' ?>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV1");
+            var y = document.getElementById("myDIV2");
+            if ((x.style.display === "block") || (y.style.display === "block")) {
+                x.style.display = "block";
+                y.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+
+        function myFunction2() {
+            var x = document.getElementById("myDIV1");
+            var y = document.getElementById("myDIV2");
+            if ((x.style.display === "block") || (y.style.display === "block")) {
+                x.style.display = "none";
+
+                y.style.display = "block";
+            } else {
+                y.style.display = "block";
+            }
+        }
+
+
+        $(document).ready(function() {
+            $('#cnpj').hide();
+            // aqui um seletor por name, para pegar todos os radio buttons "flexRadioDefault"
+            $('input:radio[name="flexRadioDefault"]').change(function() {
+                // aqui, this é o radio quem foi clicado, então basta comparar o valor com val()
+                if ($(this).val() == "sim") {
+                    $('#cnpj').show();
+                } else {
+                    $('#cnpj').hide();
+                }
+            });
+        });
+    </script>
 
 
 </body>
