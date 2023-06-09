@@ -30,7 +30,7 @@
                             <h2>Praticidade</h2>
                             <p> Tenha acesso a vários produtores de vários locais diferentes</p>
                         </div>
-                        <p> Tenha várias opções de produtos</p>
+                        <p> Adquira várias opções de produtos</p>
 
 
 
