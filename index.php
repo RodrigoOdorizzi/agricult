@@ -68,8 +68,8 @@
     <section class="service">
         <div class="container">
             <div class="row">
-                <div class="section-title">
-                    <h2>Anuncie conosco</h2>
+                <div class="section-title ">
+                    <h2>Anuncie conosco hoje</h2>
                     <p>Anunciando conosco, suas vendas vão muito mais longe</p>
                 </div>
             </div>
@@ -87,24 +87,29 @@
                     <div class="service-item">
                         <i class="ion-ios-pricetag"></i>
                         <h4>Preço justo</h4>
-                        <p>Preço justo</p>
+                        <p>Negocie com os produtores sem valores abusivos</p>
                     </div>
                 </div>
 
                 <div class="col-sm-6 col-md-3">
                     <div class="service-item">
-                        <i class="ion-ios-pricetag"></i>
-                        <h4>Preço justo</h4>
-                        <p>Preço justo</p>
+                    
+                        <i class="ion-android-pin"></i>
+                        <h4>Localizão</h4>
+                        <p>Encontre produtores mais próximos de você</p>
                     </div>
                 </div>
-
+                
 
                 <div class="col-sm-6 col-md-3">
                     <div class="service-item">
-                        <i class="ion-ios-pricetag"></i>
-                        <h4>Preço justo</h4>
-                        <p>Preço justo</p>
+                        <!--<i class="ion-sync-outline"></i>-->
+                        <i class="ion-android-sync"></i>
+                        
+
+
+                        <h4>Venda direta</h4>
+                        <p>Clientes procuram o que você quer vender</p>
                     </div>
                 </div>
 

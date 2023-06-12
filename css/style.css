@@ -294,8 +294,11 @@ input[type="tel"]:focus {
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 70px; 
 }
+.hom{
+}
+
 
 .section-title.cad {
   margin-bottom: 70px;
@@ -908,6 +911,7 @@ font header .navbar-default .navbar-nav li a:hover {
 .service {
   text-align: center;
   padding: 90px 0;
+ background-color: #e7ef7c;
 }
 
 .service .service-item {
@@ -2819,7 +2823,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .footer {
-  background: #73e7a0;
+  
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
