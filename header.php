@@ -67,8 +67,8 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Cadastre-se<span class="ion-ios-arrow-down"></span></a>
                                     <!-- -->
                                     <ul class="dropdown-menu">
-                                        <li><a href="portfolio.html">Cadastro Produtor</a></li>
-                                        <li><a href="portfolio-single.html">Cadastro Vendedor</a></li>
+                                        <li><a href="cad-prod.php">Cadastrar produtor</a></li>
+                                        <li><a href="cad-comp.php">Cadastrar compradorr</a></li>
                                     </ul>
 
 

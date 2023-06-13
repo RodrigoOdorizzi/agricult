@@ -108,31 +108,34 @@ $(document).ready(function () {
 		rules: {
 			user_name: {
 				required: true,
-				minlength: 4
+				minlength: 3
 			},
 			user_email: {
 				required: true,
 				email: true
 			},
+			user_endereco: {
+				required: true,
+				endereco: true
+			},
 			user_subject: {
 				required: false
 			},
-			user_message: {
-				required: true
-			}
+			 
 		},
 		messages: {
 			user_name: {
-				required: 'Come on, you have a name don\'t you?',
-				minlength: 'Your name must consist of at least 2 characters'
+				required: 'Você deve informar um nome',
+				minlength: 'Nome deve conter pelo menos 3 caracteres'
 			},
 			user_email: {
-				required: 'Please put your email address'
+				required: 'Por favor, insira um e-mail'
 			},
-			user_message: {
-				required: 'Put some messages here?',
-				minlength: 'Your name must consist of at least 2 characters'
-			}
+			 
+			user_endereco: {
+				required: 'Por favor, insira um e-mail'
+			},
+			 
 
 		},
 		submitHandler: function (form) {
