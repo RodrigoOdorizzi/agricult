@@ -58,8 +58,9 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="index.php">Home</a></li>
+                                <li><a href="index.php">Início</a></li>
 
+                                
                                 <li><a href="Produto.php">Produtos</a></li>
 
                                 <li class="dropdown">
@@ -67,8 +68,9 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Cadastre-se<span class="ion-ios-arrow-down"></span></a>
                                     <!-- -->
                                     <ul class="dropdown-menu">
-                                        <li><a href="cad-prod.php">Cadastrar produtor</a></li>
-                                        <li><a href="cad-comp.php">Cadastrar compradorr</a></li>
+                                      
+                                    <li><a href="cad-comp.php">Cadastrar comprador</a></li>
+                                    <li><a href="cad-prod.php">Cadastrar produtor</a></li>
                                     </ul>
 
 
@@ -79,6 +81,16 @@
                                     <a href="Quem_somos.php">Quem somos </a>
 
                                 </li>
+
+
+                                <li class="dropdown">
+                                    <a href="noticia.php">Noticias </a>
+
+                                </li>
+
+
+                             
+
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NFP-e <span class="ion-ios-arrow-down"></span></a>
                                     <ul class="dropdown-menu">

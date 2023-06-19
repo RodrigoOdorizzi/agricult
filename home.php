@@ -43,13 +43,9 @@
                         <h2>Selecione uma opção</h2>
                     </div>
 
-
-
                     <div class=" col-md-6 portfolio-item shuffle-item  " data-groups=" [&quot;design&quot;]" onclick="myFunction()">
 
                         <img src="images/portfolio/work1.jpg">
-
-
 
                         <div class="portfolio-hover">
                             <div class="portfolio-content">
@@ -80,10 +76,6 @@
 -->
                     </div>
                 </div>
-
-
-
-
             </div>
 
             <!-- .col-md-7 close -->
@@ -100,7 +92,6 @@
             <!-- .col-md-5 close -->
 
 
-        </div>
         </div>
     </section>
 
@@ -245,61 +236,6 @@
                             <h3 class="post-sub-heading">Formulario produtor</h3>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             <form method="post" action="#" id="form2" role="form">
                                 <div class="row">
                                     <div class="col-md-6 form-group">
@@ -410,17 +346,7 @@
                                     </div>
 
                             </form>
-
-
-
-
-
                         </div>
-
-
-
-
-
                     </div>
                 </div>
 
@@ -436,24 +362,7 @@
 
 
 
-    <!--  
-
-    <section class="feature bg-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-6" style="background:red">
-                    <h2 class="section-subtitle">WE BELIEVE IN GREAT IDEAS</h2>
-                    <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <a href="#" class="btn btn-view-works">View Works</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    -->
+    
     <!-- Service Start -->
     <section class="service">
         <div class="container">
