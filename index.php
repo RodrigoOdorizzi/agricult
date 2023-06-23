@@ -1,6 +1,8 @@
 <body id="body">
 
-    <?php include 'header.php' ?>
+    <?php
+  
+    include 'header.php' ?>
 
     <!-- Slider Start -->
     <section class="slider">
