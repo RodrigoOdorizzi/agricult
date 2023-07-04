@@ -3,7 +3,17 @@
 	require __DIR__ . '/vendor/autoload.php';
 	require __DIR__ . '//header.php';
 
-	// include 'header.php';
+	
+	
+//quantidada de noticias mostrada por pagina
+$item_por_pagina=2;
+//quantidade total de itens
+
+$pagina=intval($_GET['pagina']);
+$total_noticia=0; 
+//quantidade de paginas
+ 
+ 
 
 	use \App\Feed\Blog;
 	$obFeed = new Blog;
@@ -13,9 +23,9 @@
 	//variavel que guarda posicao do item
 	$items = '';
 	
+	//itera cada item do feed
 	   foreach($obFeed->getItems() as $item){
-	 
-	 
+	   $total_noticia++; 
 
 		$image= $item->enclosure->attributes()->url;
 
@@ -23,115 +33,90 @@
 		$dc = $item->children("http//purl.org/dc/elementos/1.1/");
 		$link=$item->link;
 
-
+		
 		$items.='
 
-
-		<div class="col-md-6 " style="background-color: rgb(187, 34, 65);">
+		<div class="col-md-6 " >
 		<div class="post">
-			<div class="post-thumb">
+			<div class="post-thumb" >
 				<a href="blog-single.html">
 					<img class="img-responsive" src="'.$image.' " alt=" ">
 				</a>
 			</div>
-			<h3 class="post-title"><a href=""> '.$item->title.'</a></h3>
+			<h4 class="post-title"><a href=""> '.$item->title.'</a></h4>
 			<div class="post-meta">
 				<ul>
 					<li>
 						<i class="ion-calendar"></i> '.$date. '
 					</li>
-				 
-				
-
-				</ul>
+				 		</ul>
 			</div>
-			<div class="post-content h-100">
+			<div class="post-content  " >
 				<p> '.$item->description.'</p>
-				<a href="'.$item->link.'" class="btn btn-main">Saiba mais</a>
+				<a href="'.$item->link.'" target=”_blank” rel=”noopener noreferer” class="btn btn-main">Saiba mais</a>
 			</div>
 		</div>
-	</div>';
-
-	  
+	</div>';	  
          }
-	  
-
-
- 
 		?>
+ 
+<?php
+
+$total_pagina= ceil($total_noticia / $item_por_pagina) ;
 
 
+ echo $pagina;
+?>
 
  <section class="page-title bg-2">
  	<div class="container">
  		<div class="row">
  			<div class="col-md-12">
  				<div class="block">
- 					<h1><?=$obFeed->getTitle()?></h1>
+ 					<h1>Noticias</h1>
  					<p> Confira as novidades na área agrícola</p>
  					<p class="text-muted mb-4"> atualizado em <?= $lastUpdate ?></p>
-
  				</div>
  			</div>
  		</div>
  	</div>
  </section>
-
-
-
-
-
-
+ 
  <div class="page-wrapper">
  	<div class="container">
  		<div class="row">
-		 <?=$items?>
-
- 			
+		 <?=$items?> 			
  		</div>
-
-
-
-
  		<div class="text-center">
  			<ul class="pagination post-pagination">
- 				<li><a href="#">Prev</a>
+ 				<li><a href="noticia.php?pagina=0">Prev</a>
  				</li>
- 				<li class="active"><a href="#">1</a>
- 				</li>
- 				<li><a href="#">2</a>
- 				</li>
- 				<li><a href="#">3</a>
- 				</li>
- 				<li><a href="#">4</a>
- 				</li>
- 				<li><a href="#">5</a>
- 				</li>
- 				<li><a href="#">Next</a>
+ 			
+			<?php 
+			for ($x=0;$x > $total_pagina;$x++){ 
+				
+				
+				$estilo = "";
+				if($pagina == $x) 
+					$estilo = "class=\"active\"";
+				?>
+			 
+				<li<?php echo $estilo; ?> ><a href="noticia.php?pagina=<?php echo $i;?>">echo $x+1; ?></a>
+ 				</li> 
+				<?php } ?>
+
+ 				<li><a href="noticia.php?pagina=<?php echo $total_pagina-1;?>">Next</a>
  				</li>
  			</ul>
- 		</div>
-
-						 
+ 		</div>						 
  	</div>
  </div>
 
-
-
+ 
  <div class="col-md-12">
-
-
  	<?php
-
-
-
 		include 'footer.php'
 		?>
-
-
  </div>
-
-
  </body>
-
  </html>

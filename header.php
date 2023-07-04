@@ -63,15 +63,8 @@
                                 
                                 <li><a href="Produto.php">Produtos</a></li>
 
-                                <li class="dropdown">
-
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Cadastre-se<span class="ion-ios-arrow-down"></span></a>
-                                    <!-- -->
-                                    <ul class="dropdown-menu">
-                                      
-                                    <li><a href="cad-comp.php">Cadastrar comprador</a></li>
-                                    <li><a href="cad-prod.php">Cadastrar produtor</a></li>
-                                    </ul>
+                                <li>   <a href="cad-prod.php" target=”_blank” rel=”noopener noreferer” >Cadastre-se</a>
+                                 
 
 
                                 </li>

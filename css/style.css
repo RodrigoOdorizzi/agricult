@@ -2362,6 +2362,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-top: 10px;
   margin: 25px 0 0;
   text-transform: uppercase;
+  min-height: 50px;;
 }
 
 .post .post-title a {

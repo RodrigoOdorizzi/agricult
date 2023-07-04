@@ -29,11 +29,12 @@
                             <input name="user_fone" type="text" class="form-control" placeholder="Telefone">
                         </div>
 
-
-
-
                         <div class="form-group">
                             <input name="user_endereco" type="text" class="form-control" placeholder="Informe seu endereço">
+                        </div>
+
+                        <div class="form-group">
+                            <input name="user_estado" type="text" class="form-control" placeholder="Selecione o estado">
                         </div>
 
                         <div class="form-group">
@@ -66,8 +67,8 @@
                 </div>
               
                 </div>
-                <div class="error" id="error">Sorry Msg dose not sent</div>
-                <div class="success" id="success">Message Sent</div>
+                <div class="error" id="error">Desculpe, mensagem não enviada!</div>
+                <div class="success" id="success">Mensagem enviada</div>
             </form>
         </div>
 
