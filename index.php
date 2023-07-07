@@ -46,8 +46,8 @@
 
 
  
-    <section class="service-arrow">
-        <div class="container-fluid">
+    <section class="service-arrow" 
+        <div class="container-fluid" >
            
                 <div class="col-md-6 bg-primary" >
                     <div class="block" >
@@ -104,8 +104,9 @@
     <section class="service">
         <div class="container">
             <div class="row">
-                <div class="section-title ">
-                    <h2>Anuncie conosco hoje</h2>
+                <div class="section-title" >
+                   
+                    <h2 >Anuncie conosco hoje</h2>
                     <p>Anunciando conosco, suas vendas vão muito mais longe</p>
                 </div>
             </div>

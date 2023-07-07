@@ -312,9 +312,9 @@ input[type="tel"]:focus {
 .section-title {
   margin-bottom: 70px; 
 }
-.hom{
-}
+  
 
+ 
 
 .section-title.cad {
   margin-bottom: 70px;
@@ -2362,7 +2362,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-top: 10px;
   margin: 25px 0 0;
   text-transform: uppercase;
-  min-height: 50px;;
+  min-height: 50px;
 }
 
 .post .post-title a {
@@ -2406,6 +2406,9 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 26px;
 }
 
+.post-content > p{
+  min-height: 80px; 
+}
 .post .post-content .btn-main,
 .post .post-content .btn-transparent,
 .post .post-content .btn-small {
@@ -2843,8 +2846,8 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
   padding-top: 18px;
   padding-bottom: 25px;
-  background-color:#0afc6b;
-  color:#fff;
+  background-color:#d9ffe8;
+   
 }
 
 .footer p {
