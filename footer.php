@@ -19,15 +19,14 @@
         </div>
     </div>
 </footer>
-
-
+    
 
 
 <!-- 
     Essential Scripts
     =====================================-->
 
-
+    <script src="js/script.js"></script>
 <!-- Main jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap 3.1 -->
@@ -47,4 +46,4 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
 <script src="plugins/google-map/map.js"></script>
 
-<script src="js/script.js"></script>
+ 

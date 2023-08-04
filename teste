@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="teste.php" method="post">
+      
+        <div class="form-group">
+            <input name="nome" type="text" class="form-control" placeholder="Nome completo">
+        </div>
+        
+        <button class="btn btn-default" type="submit" name="acao" id="acao" value="salvar">
+            <a href="acao_pessoa.php" target="_blank">Cadastrar</a></button>
+         
+        </form>
 </body>
 </html>
