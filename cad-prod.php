@@ -10,10 +10,18 @@ if ($acao == 'editar') {
         $obj = show_pessoa($codigo);
 }
 
+<<<<<<< HEAD
    include 'header.php';
  
 
    ?>
+=======
+
+
+   include 'header.php' 
+
+?>
+>>>>>>> retiradocadastroconsumidor
 
 <section class="page-title bg-2">
     <div class="container">
@@ -33,7 +41,11 @@ if ($acao == 'editar') {
         <div class="row">
 
 
+<<<<<<< HEAD
             <form action="acao_pessoa" id="contact-form" method="post" enctype="multipart/form-data">
+=======
+            <form action="acao_pessoa" id="contact-form" method="post">
+>>>>>>> retiradocadastroconsumidor
                 <div class="col-md-12 col-sm-12">
                     <div class="block">
                         <div class="form-group">
@@ -44,7 +56,11 @@ if ($acao == 'editar') {
 
 
                         <div class="form-group">
+<<<<<<< HEAD
                             <input type="text" name="nome" class="form-control" placeholder="Nome completo" required>
+=======
+                            <input type="text" name="nome" class="form-control" placeholder="Nome completo">
+>>>>>>> retiradocadastroconsumidor
 
                         </div>
 
@@ -69,11 +85,194 @@ if ($acao == 'editar') {
 
                             <option value="AC"> Acre
 
+<<<<<<< HEAD
                             </option>
 
                             <option value="AL">Alagoas
+=======
+
+>>>>>>> retiradocadastroconsumidor
+
+                        <div class="form-group" >
+
+<<<<<<< HEAD
+                            </option>
+                            <option value="AP">
+                                Amapá
+=======
+>>>>>>> retiradocadastroconsumidor
+
+                        <select class="form-control"  name="id_estado" aria-label=".form-select-lg example">
+                        
+                        <option selected >Selecione seu estado</option>
+
+<<<<<<< HEAD
+                            </option>
+                            <option value="AM">
+                                Amazonas
+
+                            </option>
+
+                            <option value="BA">
+                                Bahia
+
+                            </option>
+
+                            <option value="CE">
+                                Ceará
+
+                            </option>
+
+                            <option value="ES">
+                                Espírito Santo
 
 
+                            </option>
+                            <option value="GO">
+                                Goiás
+                            </option>
+
+
+                            <option value="MA">
+                                Maranhão
+
+                            </option>
+
+                            <option value="MT">
+                                Mato Grosso
+
+
+                            </option>
+                            <option value="MS">
+                                Mato Grosso do Sul
+
+                            </option>
+
+                            <option value="MG">
+                                Minas Gerais
+
+
+                            </option>
+                            <option value="PA">
+                                Pará
+
+                            </option>
+                            <option value="PB">
+                                Paraíba
+
+                            </option>
+
+                            <option value="PR">
+                                Paraná
+
+                            </option>
+
+                            <option value="PE">
+                                Pernambuco
+
+                            </option>
+
+                            <option value="PI">
+                                Piauí
+=======
+                            <option value="AC"> Acre
+
+                            </option>
+
+                            <option value="AL">Alagoas
+>>>>>>> retiradocadastroconsumidor
+
+                            </option>
+
+<<<<<<< HEAD
+                            <option value="RJ">
+                                Rio de Janeiro
+
+                            </option>
+
+                            <option value="RN">
+                                Rio Grande do Norte
+
+
+                            </option>
+                            <option value="RS">
+                                Rio Grande do Sul
+
+                            </option>
+
+                            <option value="RO">
+                                Rondônia
+
+
+                            <option value="RR">
+                                Roraima
+
+
+                            </option>
+                            <option value="SC">
+                                Santa Catarina
+
+                            </option>
+
+                            <option value="SP">
+                                São Paulo
+
+                            </option>
+
+                            <option value="SE">
+                                Sergipe
+
+                            </option>
+
+                            <option value="TO">
+                                Tocantins
+
+
+                            </option>
+                            <option value="DF">
+                                Distrito Federal
+                            </option>
+                        </select>
+                    </div>
+
+
+
+
+<!-- -->
+                    <div class="form-group">
+                        <input name="nascimento" type="text" class="form-control" placeholder="Informe sua data de nascimento">
+                    </div>
+                    
+
+                    <div class="form-group">
+                    <p>
+                <label for="Selecione o arquivo"></label>  </p>
+
+                    <input type="file" name="imagem" class="form-control"  accept="image/*">    
+                
+                </div>
+
+                
+
+                    <div class="form-group">
+                        <input name="cidade" type="text" class="form-control" placeholder="cidade">
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <input name="usuario" type="user" class="form-control" placeholder="Informe um nome de usuário">
+                    </div>
+
+
+                    <div class="form-group">
+                        <input name="senha" type="password" class="form-control" placeholder="Informe uma senha">
+                    </div>
+ 
+                    <input type="submit" class="btn btn-sm btn-secondary"  name="acao" id="acao" value="salvar"> 
+
+=======
                             </option>
                             <option value="AP">
                                 Amapá
@@ -197,26 +396,18 @@ if ($acao == 'editar') {
                                 Distrito Federal
                             </option>
                         </select>
+
+
                     </div>
 
 
 
 
-<!-- -->
+
                     <div class="form-group">
                         <input name="nascimento" type="text" class="form-control" placeholder="Informe sua data de nascimento">
                     </div>
-                    
 
-                    <div class="form-group">
-                    <p>
-                <label for="Selecione o arquivo"></label>  </p>
-
-                    <input type="file" name="imagem" class="form-control"  accept="image/*">    
-                
-                </div>
-
-                
 
                     <div class="form-group">
                         <input name="cidade" type="text" class="form-control" placeholder="cidade">
@@ -233,9 +424,12 @@ if ($acao == 'editar') {
                     <div class="form-group">
                         <input name="senha" type="password" class="form-control" placeholder="Informe uma senha">
                     </div>
- 
-                    <input type="submit" class="btn btn-sm btn-secondary"  name="acao" id="acao" value="salvar"> 
 
+
+
+                    <br><button class="btn btn-sm btn-secondary" type="submit" name="acao" id="acao" value="salvar">Salvar</button>
+
+>>>>>>> retiradocadastroconsumidor
                 </div>
         </div>
 
@@ -251,7 +445,11 @@ if ($acao == 'editar') {
 
 
 <?php
+<<<<<<< HEAD
  include 'footer.php';
+=======
+ // include 'footer.php' 
+>>>>>>> retiradocadastroconsumidor
 ?>
 
 
@@ -260,7 +458,10 @@ if ($acao == 'editar') {
     Essential Scripts
     =====================================-->
 
+<<<<<<< HEAD
     <script src="js/script.js"></script>
+=======
+>>>>>>> retiradocadastroconsumidor
 
 <!-- Main jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
@@ -281,3 +482,7 @@ if ($acao == 'editar') {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
 <script src="plugins/google-map/map.js"></script>
 
+<<<<<<< HEAD
+=======
+<script src="js/script.js"></script>
+>>>>>>> retiradocadastroconsumidor
