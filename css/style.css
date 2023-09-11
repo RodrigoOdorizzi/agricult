@@ -64,7 +64,7 @@ ul {
 iframe {
   border: 0;
 }
-
+ 
 a,
 a:focus,
 a:hover {
@@ -122,6 +122,16 @@ input[type="tel"]:focus {
 .slick-slide {
   outline: 0;
 }
+
+.btn-green{background:	#25D366;
+  color:#ffffff;
+
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 1px; 
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all 0.2s ease;}
 
 .btn-main,
 .btn-transparent,
@@ -1072,6 +1082,9 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #fff;
   padding: 10px 20px;
 }
+.portfolio{
+  text-align: center;
+}
 
 .portfolio-work {
   padding: 80px 0;
@@ -1106,20 +1119,50 @@ font header .navbar-default .navbar-nav li a:hover {
 
 
 .portfolio-item img {
-  width: 100%;
+  width: 50%;
   height: auto;
-}
+  border: #000;
+  border-style: solid;
 
+  }
+.portfolio-item{
+  margin-right: 10px;
+  margin-bottom: 10px; 
+} 
 .portfolio-item:hover .portfolio-hover {
   visibility: visible;
   opacity: 1;
 }
+.portfolio-nome{
+  margin-top: 10px;
+}
+.portfolio-nome > i{
+  font-size: 30px;
+  
+   
+} 
 
+.portfolio-nome.col-md-1{
+  
+
+}
+.portfolio-nome.col-md-11{
+  margin-bottom: 20px;
+   
+} 
+
+.portfolio-nome.col-md-11 img{
+  width: 10%;
+}
 .portfolio-item:hover .portfolio-content {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
+.portfolio-item:hover .portfolio-content1 {
+  -webkit-transform: translateY(-0%);
+  transform: translateY(-40%);
+}
 .portfolio-hover {
   position: absolute;
   height: 100%;
@@ -1148,6 +1191,25 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #fff;
 }
 
+.portfolio-content1 {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  bottom: 150%;
+  -webkit-transform: translateY(-40%);
+  transform: translateY(-40%);
+
+  transition: inherit;
+}
+
+.portfolio-content1 a{
+  display: flex;
+  transition: .2s ease;
+  
+}
+
+
 .portfolio-content a {
   display: block;
   transition: .2s ease;
@@ -1155,6 +1217,11 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .portfolio-content a i {
   font-size: 30px;
+}
+
+.portfolio-content1 a i {
+  font-size: 30px;
+  text-align: center;
 }
 
 .portfolio-content a.h3 {
@@ -1286,9 +1353,7 @@ font header .navbar-default .navbar-nav li a:hover {
   box-shadow: none;
   width: 100%;
 }
-
-.tp-1 {}
-
+ 
 
 .contact-form .block .form-group-2 {
   margin-bottom: 13px;

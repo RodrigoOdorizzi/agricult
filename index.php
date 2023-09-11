@@ -22,98 +22,96 @@
         </div>
     </section>
 
+ 
+
+
+ 
+
 
     
+           
 
-    <!-- Service Start -->
+             <!-- Service Start -->
     <section class="service">
         <div class="container">
             <div class="row">
-                <div class="section-title" >
+                <div class="section-title">
                    
                     <h2 >Anuncie conosco hoje</h2>
                     <p>Anunciando conosco, suas vendas vão muito mais longe</p>
-                    
-           
-                </div>
-            </div>
-            <div class="row ">
+                 
 
 
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-item">
-                        <i class="ion-ios-nutrition"></i>
-                        <h4>Produtos</h4>
-                        <p>Produtos direto do agricultor </p>
+                    </div>
+                    </div>
+                    <div class="row ">
+        
+        
+                        <div class="col-sm-6 col-md-3">
+                            <div class="service-item">
+                                <i class="ion-ios-nutrition"></i>
+                                <h4>Produtos</h4>
+                                <p>Produtos direto do agricultor </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="service-item">
+                                <i class="ion-ios-pricetag"></i>
+                                <h4>Preço justo</h4>
+                                <p>Negocie com os produtores sem valores abusivos</p>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-6 col-md-3">
+                            <div class="service-item">
+        
+                                <i class="ion-android-pin"></i>
+                                <h4>Localizão</h4>
+                                <p>Encontre produtores mais próximos de você</p>
+                            </div>
+                        </div>
+        
+        
+                        <div class="col-sm-6 col-md-3">
+                            <div class="service-item">
+                                <!--<i class="ion-sync-outline"></i>-->
+                                <i class="ion-android-sync"></i>
+                                <h4>Venda direta</h4>
+                                <p>Clientes procuram o que você quer vender</p>
+                            </div>                    
+                        </div>
+                        <div class="row">
+        
+
+                        <?php 
+
+                        if(session_status() == 1){
+
+                            echo '  <a href="cadastro" class="btn btn-main btn-m animated fadeInDown ">Acesse aqui</a>
+                            ';
+                        }else{
+                           echo  ' <a href="cad-produto" class="btn btn-main btn-m animated fadeInDown ">Acesse aqui</a>';
+        
+                        }
+                      
+                   
+                   ?>
+        
+                        </div>
+        
+        
+        
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-item">
-                        <i class="ion-ios-pricetag"></i>
-                        <h4>Preço justo</h4>
-                        <p>Negocie com os produtores sem valores abusivos</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-item">
-
-                        <i class="ion-android-pin"></i>
-                        <h4>Localizão</h4>
-                        <p>Encontre produtores mais próximos de você</p>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-item">
-                        <!--<i class="ion-sync-outline"></i>-->
-                        <i class="ion-android-sync"></i>
-                        <h4>Venda direta</h4>
-                        <p>Clientes procuram o que você quer vender</p>
-                    </div>                    
-                </div>
-                <div class="row">
-
-                <a href="cadastro" class="btn btn-main btn-m animated fadeInDown ">Acesse aqui</a>
-
-                <?php
+            </section>;
+        
+        
+            
+        
  
  
- /* if ( !isset( $_SESSION ) ) 
-{ 
-    session_start();
- }
-
-if ( session_status() !== PHP_SESSION_ACTIVE )
-{
-   session_start();
-   echo 'nao destruiu';
-}
-else
 
 
-echo ' destruiu';
- */ 
- 
-
-echo session_status();
-
-?>
-
-
-
-
-                </div>
-
-
-
-            </div>
-        </div>
-    </section>
-
-
-    
 
  
     <section class="service-arrow" >
@@ -125,7 +123,7 @@ echo session_status();
                         <i class="ion-android-contact"></i>
                         <h3>Encontre vendedores</h3>
                         <p style="color: #000; ">Encontre os vendedores mais próximos da sua região e negocie diretamente com eles.</p>
-                        <a href="Nota_fiscal.php" class="btn btn-main bnt-main-black">Acesse aqui</a>
+                        <a href="show-produtor.php" class="btn btn-main bnt-main-black">Acesse aqui</a>
 
                     </div>
                 </div>
@@ -171,6 +169,9 @@ echo session_status();
                             <p> Tenha acesso a vários produtores de vários locais diferentes</p>
 
                             <p> Adquira várias opções de produtos</p>
+                   
+
+                   
                         </div>
                         <a href="produto.php" target="_blank" class="btn btn-main btn-m animated fadeInDown ">Encontre seus produtos</a>
 
@@ -179,7 +180,8 @@ echo session_status();
                 <div class="col-md-5 col-sm-12">
                     <div class="block">
                         <img src="images/wrapper-img.png" alt="Img">
-                    </div>
+                   
+</div>
                 </div><!-- .col-md-5 close -->
             </div>
         </div>
@@ -190,5 +192,7 @@ echo session_status();
 
 
 </body>
+
+ 
 
 </html>

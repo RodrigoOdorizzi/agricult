@@ -10,11 +10,10 @@ if ($acao == 'editar') {
         $obj = show_pessoa($codigo);
 }
 
+   include 'header.php';
+ 
 
-
-   include 'header.php' 
-
-?>
+   ?>
 
 <section class="page-title bg-2">
     <div class="container">
@@ -34,7 +33,7 @@ if ($acao == 'editar') {
         <div class="row">
 
 
-            <form action="acao_pessoa" id="contact-form" method="post">
+            <form action="acao_pessoa" id="contact-form" method="post" enctype="multipart/form-data">
                 <div class="col-md-12 col-sm-12">
                     <div class="block">
                         <div class="form-group">
@@ -45,7 +44,7 @@ if ($acao == 'editar') {
 
 
                         <div class="form-group">
-                            <input type="text" name="nome" class="form-control" placeholder="Nome completo">
+                            <input type="text" name="nome" class="form-control" placeholder="Nome completo" required>
 
                         </div>
 
@@ -61,13 +60,9 @@ if ($acao == 'editar') {
                         <div class="form-group">
                             <input name="endereco" type="text" class="form-control" placeholder="Informe seu endereço">
                         </div>
-
-
-
-
+                    
                         <div class="form-group" >
-
-
+                            
                         <select class="form-control"  name="id_estado" aria-label=".form-select-lg example">
                         
                         <option selected >Selecione seu estado</option>
@@ -202,18 +197,26 @@ if ($acao == 'editar') {
                                 Distrito Federal
                             </option>
                         </select>
-
-
                     </div>
 
 
 
 
-
+<!-- -->
                     <div class="form-group">
                         <input name="nascimento" type="text" class="form-control" placeholder="Informe sua data de nascimento">
                     </div>
+                    
 
+                    <div class="form-group">
+                    <p>
+                <label for="Selecione o arquivo"></label>  </p>
+
+                    <input type="file" name="imagem" class="form-control"  accept="image/*">    
+                
+                </div>
+
+                
 
                     <div class="form-group">
                         <input name="cidade" type="text" class="form-control" placeholder="cidade">
@@ -230,10 +233,8 @@ if ($acao == 'editar') {
                     <div class="form-group">
                         <input name="senha" type="password" class="form-control" placeholder="Informe uma senha">
                     </div>
-
-
-
-                    <br><button class="btn btn-sm btn-secondary" type="submit" name="acao" id="acao" value="salvar">Salvar</button>
+ 
+                    <input type="submit" class="btn btn-sm btn-secondary"  name="acao" id="acao" value="salvar"> 
 
                 </div>
         </div>
@@ -250,7 +251,7 @@ if ($acao == 'editar') {
 
 
 <?php
- // include 'footer.php' 
+ include 'footer.php';
 ?>
 
 
@@ -259,6 +260,7 @@ if ($acao == 'editar') {
     Essential Scripts
     =====================================-->
 
+    <script src="js/script.js"></script>
 
 <!-- Main jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
@@ -279,4 +281,3 @@ if ($acao == 'editar') {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
 <script src="plugins/google-map/map.js"></script>
 
-<script src="js/script.js"></script>

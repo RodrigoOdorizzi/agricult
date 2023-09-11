@@ -20,7 +20,8 @@ if ($acao == "logoff") {
 			if (isset($_POST['user']) && !empty($_POST['user']) && isset($_POST['pass']) && !empty($_POST['pass'])){
 				$user = addslashes($_POST['user']);
 				$senha = addslashes($_POST['pass']);
-			 	logar($user, $senha);
+				$codigo = addslashes($_POST['codigo']);
+				logar($user, $senha);
 				 
 }
 		  else
@@ -43,6 +44,7 @@ function logar($user, $senha)
 	$senhaBD = "";
 	$usuario = "";
 	$nome = "";
+	$codigo = "";
 
  
 
@@ -50,7 +52,7 @@ function logar($user, $senha)
 		$senhaBD = $row['senha'];
 		$usuario = $row['usuario'];
 		$nome = $row['nome'];	
-		
+		$codigo = $row['codigo'];
 		
 	}
  	
@@ -61,12 +63,16 @@ function logar($user, $senha)
 		
 		$_SESSION['user'] = $usuario;
 		$_SESSION['nome'] = $nome;
-		
-		header("location:index");
+		$_SESSION['codigo'] = $codigo;
 	
+	
+		$_SESSION['msg'] =  "<div class='alert alert-success'>Sucesso!</div>";
+
+		header("location:index");
+	  
        
 	}  else {
-	$_SESSION['valida']='2';
+	$_SESSION['valida']='2';																																
 		    
 	     $_SESSION['msg'] = "<div class='alert alert-danger'>Login ou senha incorreto!</div>";
 		 header("location:cadastro");
