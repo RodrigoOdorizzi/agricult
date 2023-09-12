@@ -108,31 +108,34 @@ $(document).ready(function () {
 		rules: {
 			user_name: {
 				required: true,
-				minlength: 4
+				minlength: 3
 			},
 			user_email: {
 				required: true,
 				email: true
 			},
+			user_endereco: {
+				required: true,
+				endereco: true
+			},
 			user_subject: {
 				required: false
 			},
-			user_message: {
-				required: true
-			}
+			 
 		},
 		messages: {
 			user_name: {
-				required: 'Come on, you have a name don\'t you?',
-				minlength: 'Your name must consist of at least 2 characters'
+				required: 'Você deve informar um nome',
+				minlength: 'Nome deve conter pelo menos 3 caracteres'
 			},
 			user_email: {
-				required: 'Please put your email address'
+				required: 'Por favor, insira um e-mail'
 			},
-			user_message: {
-				required: 'Put some messages here?',
-				minlength: 'Your name must consist of at least 2 characters'
-			}
+			 
+			user_endereco: {
+				required: 'Por favor, insira um e-mail'
+			},
+			 
 
 		},
 		submitHandler: function (form) {
@@ -152,3 +155,104 @@ $(document).ready(function () {
 	});
 
 });
+
+
+
+let container = document.querySelector(".content");
+let loadMoreButton = document.querySelector(".content button");
+
+
+let valorinicial =6;
+let carregaritem = 2;
+
+
+function carregariteminicial(){
+	
+		let itens = JSON.parse(localStorage.getItem("books"));
+		let out = "";
+		let counter = 0;
+		for(let item of itens){
+		   if(counter < initialItems){
+			  out += `
+				 <div class="book">
+					<div class="left">
+					   <img src="${book.image}" alt="">
+					</div>
+					<div class="right">
+					   <p class="title">${book.title}</p>
+					   <p class="about">${book.about}</p>
+					   <p class="info">Pages: ${book.pages} / Year: ${book.year} </p>
+					</div>
+				 </div>
+			  `;
+		   }
+		   counter++;
+		}
+	  
+		let div = document.createElement("div");
+		container.insertBefore(div, loadMoreButton);
+		div.innerHTML = out;
+	 
+
+
+}
+
+function loadData(){
+	let itens = JSON.parse(localStorage.getItem("itens"));
+	let currentDisplayedItems = document.querySelectorAll(".item").length;
+  
+	let out = "";
+	let counter = 0;
+	for(let item of items){
+	   if(counter >= currentDisplayedItems && counter < loadItems + currentDisplayedItems){
+		  out += `
+			 <div class="book">
+				<div class="left">
+				   <img src="${book.image}" alt="">
+				</div>
+				<div class="right">
+				   <p class="title">${book.title}</p>
+				   <p class="about">${book.about}</p>
+				   <p class="info">Pages: ${book.pages} / Year: ${book.year} </p>
+				</div>
+			 </div>
+		  `;
+	   }
+	   counter++;
+	}
+  
+	let div = document.createElement("div");
+	container.insertBefore(div, loadMoreButton);
+	div.innerHTML = out;
+	div.style.opacity = 0;
+  
+	if(document.querySelectorAll(".item").length == items.length){
+	   loadMoreButton.style.display = "none";
+	}
+  
+	fadeIn(div);
+ }
+
+
+ function fadeIn(div){
+	let opacity = 0;
+	let interval = setInterval(function(){
+	   if (opacity <= 1) {
+		  opacity = opacity + 0.1; // increasing the opacity by 0.1.
+		  div.style.opacity = opacity; // making the div element gradual visible.
+	   }else{
+		  clearInterval(interval);
+	   }
+	}, 30);
+ }
+
+ 
+
+ 
+function Mudarestado(el) {
+	var display = document.getElementById(el).style.display;
+	if (display == "none")
+	  document.getElementById(el).style.display = 'block';
+	else
+	  document.getElementById(el).style.display = 'none';
+  }

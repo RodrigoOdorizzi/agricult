@@ -5,30 +5,30 @@
             <div class="col-md-12">
                 <div class="footer-manu">
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="Quem_somos.php">Quem somos 1x</a></li>
+                        <li><a href="noticia.php">Notícias</a></li>                        
+                        <li><a href="Nota_fiscal.php">NFP-e</a></li>
+                        <li><a href="contato.php">Contate-nos</a></li>
+                        
                     </ul>
                 </div>
-                <p class="copyright">Copyright 2018 &copy; Design & Developed by <a href="http://www.themefisher.com">themefisher.com</a>. All rights reserved.
-                    <br>
-                    Get More <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Free Bootstrap Templates</a>
+                <p class="copyright">Copyright 2023 &copy; Design & Developed by Rodrigo Odorizzi. All rights reserved.
+                  
                 </p>
             </div>
         </div>
     </div>
 </footer>
+    
 
-
-
+<<<<<<< HEAD
+=======
 
 <!-- 
     Essential Scripts
     =====================================-->
 
-
+    <script src="js/script.js"></script>
 <!-- Main jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap 3.1 -->
@@ -48,4 +48,5 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
 <script src="plugins/google-map/map.js"></script>
 
-<script src="js/script.js"></script>
+ 
+>>>>>>> retiradocadastroconsumidor
