@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 include_once "acao_pessoa.php";
@@ -22,6 +23,9 @@ if ($acao == 'editar') {
 
 ?>
 >>>>>>> retiradocadastroconsumidor
+=======
+<?php include 'header.php' ?>
+>>>>>>> main
 
 <section class="page-title bg-2">
     <div class="container">
@@ -39,6 +43,7 @@ if ($acao == 'editar') {
 <section class="contact-form">
     <div class="container">
         <div class="row">
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -69,10 +74,24 @@ if ($acao == 'editar') {
                         </div>
                         <div class="form-group">
                             <input name="telefone" type="text" class="form-control" placeholder="Telefone">
+=======
+            <form id="contact-form">
+                <div class="col-md-12 col-sm-12">
+                    <div class="block">
+                        <div class="form-group">
+                            <input name="user_name" type="text" class="form-control" placeholder="Nome completo">
+                        </div>
+                        <div class="form-group">
+                            <input name="user_email" type="text" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input name="user_fone" type="text" class="form-control" placeholder="Telefone">
+>>>>>>> main
                         </div>
 
 
 
+<<<<<<< HEAD
                         <div class="form-group">
                             <input name="endereco" type="text" class="form-control" placeholder="Informe seu endereço">
                         </div>
@@ -486,3 +505,50 @@ if ($acao == 'editar') {
 =======
 <script src="js/script.js"></script>
 >>>>>>> retiradocadastroconsumidor
+=======
+
+                        <div class="form-group">
+                            <input name="user_endereco" type="text" class="form-control" placeholder="Informe seu endereço">
+                        </div>
+
+                        <div class="form-group">
+                            <input name="user_cidade" type="text" class="form-control" placeholder="cidade">
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label class="form-label" for="customFile">Envia sua foto</label>
+                            <input type="file" class="form-control" id="customFile" />
+
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <input name="user_senha" type="password" class="form-control" placeholder="Informe uma senha">
+                        </div>
+
+
+                        <div class="form-group">
+                            <input name="user_senha2" type="password" class="form-control" placeholder="Confirme sua senha">
+                        </div>
+
+
+                        <button class="btn btn-default" type="submit">Cadastrar</button>
+
+                                            </div>
+                </div>
+              
+                </div>
+                <div class="error" id="error">Sorry Msg dose not sent</div>
+                <div class="success" id="success">Message Sent</div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<?php include 'footer.php' ?>
+>>>>>>> main

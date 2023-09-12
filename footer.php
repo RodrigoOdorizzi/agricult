@@ -5,7 +5,11 @@
             <div class="col-md-12">
                 <div class="footer-manu">
                     <ul>
+<<<<<<< HEAD
                         <li><a href="Quem_somos.php">Quem somos 1x</a></li>
+=======
+                        <li><a href="Quem_somos.php">Quem somos</a></li>
+>>>>>>> main
                         <li><a href="noticia.php">Notícias</a></li>                        
                         <li><a href="Nota_fiscal.php">NFP-e</a></li>
                         <li><a href="contato.php">Contate-nos</a></li>

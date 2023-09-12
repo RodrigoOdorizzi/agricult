@@ -37,10 +37,13 @@
                         </div>
 
                         <div class="form-group">
+<<<<<<< HEAD
                             <input name="user_estado" type="text" class="form-control" placeholder="Selecione o estado">
                         </div>
                         
                         <div class="form-group">
+=======
+>>>>>>> main
                             <input name="user_cidade" type="text" class="form-control" placeholder="cidade">
                         </div>
 
