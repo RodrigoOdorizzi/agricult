@@ -54,8 +54,8 @@ if(isset($_POST['consulta'])){
 
  
 $pdo = Conexao::getInstance();
-$consulta = $pdo->query("SELECT * FROM produto
- WHERE codigo
+$consulta = $pdo->query("SELECT DISTINCT * FROM produto
+ WHERE Categoria
  LIKE '$consulta%'");
   
 
@@ -76,23 +76,20 @@ $consulta = $pdo->query("SELECT * FROM produto
                 </label>
 
                 <label class="btn btn-sm btn-primary active">
-                  <input type="radio" name="shuffle-filter" value="Carne"   />Carnes
+                  <input type="radio" name="shuffle-filter" value="carne"   />Carnes
                 </label>
 
                 <label class="btn btn-sm btn-primary active">
                   <input type="radio" name="shuffle-filter" value="Fruta"   />Frutas
                 </label>
 
+
                 <label class="btn btn-sm btn-primary active">
-                  <input type="radio" name="shuffle-filter" value="Hortalica"  />Hortaliças
+                  <input type="radio" name="shuffle-filter" value="hortalica"  />Legumes
                 </label>
 
                 <label class="btn btn-sm btn-primary active">
-                  <input type="radio" name="shuffle-filter" value="Legume"  />Legumes
-                </label>
-
-                <label class="btn btn-sm btn-primary active">
-                  <input type="radio" name="shuffle-filter" value="Uutro"  />Outros
+                  <input type="radio" name="shuffle-filter" value="outro"  />Outros
                 </label>
 
 
@@ -131,12 +128,39 @@ $consulta = $pdo->query("SELECT * FROM produto
             
  
 
-        
+       
+          
+          
+          
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;'.$categorias[11].'&quot;]" style="background-color:#545454">
+            <img style="max-height: 100px"  src="<?php echo $fotoP[1] ?>">
+ 
+  <!-- 
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;fruta&quot;]">
+         
+           <img src="images/portfolio/work1.jpg" alt=""> -->
+                <div class="portfolio-hover">
+                  <div class="portfolio-content">
+                    <a href="images/portfolio/work1.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                    <a class="h3" href="portfolio-single.html">dsadsadade</a>
+                    <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                  </div>
+                </div>
+              </div>
+
+
+              
+             <?php 
+                 $x++;
+            
+                } 
+                     ?>
+
 
 
               <div class="col-md-4 portfolio-item shuffle-item"
                 data-groups="[&quot;<?php echo $produto->getCategoria()?>&quot;]">
-                <img style="height: 100px;"  src="<?php echo $produto->getFotoProduto()?>" alt="">
+                <img src="<?php $produto->getFotoProduto()?>" alt="">
                 <div class="portfolio-hover">
                   <div class="portfolio-content">
                     <a href="images/portfolio/work2.jpg" class="portfolio-popup"><i class="icon ion-search"></i></a>
@@ -146,14 +170,6 @@ $consulta = $pdo->query("SELECT * FROM produto
                 </div>
               </div>
               
-
-              <?php 
-              
-            
-                } 
-                     ?>
-
-
             </div>
           </div>
         </div>

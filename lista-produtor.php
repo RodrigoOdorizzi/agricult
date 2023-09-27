@@ -107,7 +107,7 @@ if(isset($_POST['consulta'])){
  <p> Telefone / Whatsapp</p>
 
 
-<a href="<?php echo "https://wa.me/55".$pessoa->getTelefone(); ?>" target="_blank" rel=”noopener noreferrer"> 
+<a href="<?php echo "https://wa.me/55".$pessoa->getTelefone(); ?>"  target="_blank" rel=”noopener noreferrer"> 
 <h4> <?php echo $pessoa->getTelefone(); ?>    <button target="_blank" class="btn btn-green btn-round" > Fale com Produtor
 </button>   </h4>  
 </a>
@@ -144,6 +144,11 @@ if(isset($_POST['consulta'])){
 </div>
 
 <!-- fim div row-->
+
+</div>
+<div class="portfolio-item col-md-12" >
+
+<a href="index" class="btn btn-main btn-m  ">Voltar ao menu inicial</a>
 
 </div>
 </section>

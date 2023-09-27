@@ -1,4 +1,15 @@
-<?php include 'header.php' ?>
+<?php 
+
+include_once "acao_produto.php";
+
+$acao = isset($_GET['acao']) ? $_GET['acao'] : "";
+$obj;
+if ($acao == 'editar') {
+    $codigo = isset($_GET['codigo']) ? $_GET['codigo'] : "";
+    if ($codigo > 0)
+        $obj = show_produto($codigo);
+}
+include 'header.php' ?>
 
 <section class="page-title bg-2">
     <div class="container">
@@ -19,7 +30,7 @@
 
 
 
-            <form action="acaoProduto" id="contact-form" method="post">
+            <form action="acao_produto" id="contact-form" method="post" enctype="multipart/form-data">
                 <div class="col-md-12 col-sm-12">
                     <div class="block">
                         <div class="form-group">
@@ -35,13 +46,6 @@
                         <div class="form-group">
                             <input name="preco" type="text" class="form-control" placeholder="Preço">
                         </div>
-                        <div class="form-group">
-                         
-                        
-                        
-                        <input name="cod_vendedor" type="hidden" class="form-control" placeholder="Código do vendedor" value=<?php echo $_SESSION['codigo'] ?> >
-                        </div>
-
 
 
 
@@ -74,8 +78,21 @@
                         </div>
 
 
+ 
+
+                        <div class="form-group">
+                    <p>
+                <label for="Selecione o arquivo"></label>  </p>
+
+                    <input type="file" name="fotoProduto" class="form-control"  accept="fotoProduto/*">    
+                
+                </div>
 
 
+
+                <div class="form-group">
+                            <input name="cod_vendedor" type="hidden" class="form-control" placeholder="Código do vendedor" value=<?php echo $_SESSION['codigo'] ?> >
+                        </div>
 
 
 

@@ -7,10 +7,7 @@ class Pessoa extends AbsClassCodigoNome
     private $endereco;
     private $id_estado;
     private $nascimento;
-<<<<<<< HEAD
     private $imagem;
-=======
->>>>>>> retiradocadastroconsumidor
     private $cidade;
     private $usuario;
     private $senha;
@@ -60,12 +57,9 @@ class Pessoa extends AbsClassCodigoNome
     }
 
     
-<<<<<<< HEAD
 
     
     
-=======
->>>>>>> retiradocadastroconsumidor
     public function getNascimento()
     {
         return $this->nascimento;
@@ -77,7 +71,6 @@ class Pessoa extends AbsClassCodigoNome
     }
 
 
-<<<<<<< HEAD
 
 
 
@@ -92,8 +85,6 @@ class Pessoa extends AbsClassCodigoNome
     }
 
 
-=======
->>>>>>> retiradocadastroconsumidor
     public function getCidade()
     {
         return $this->cidade;
@@ -127,11 +118,7 @@ class Pessoa extends AbsClassCodigoNome
     
     public function __toString()
     {
-<<<<<<< HEAD
         return parent::__toString() . " | Email: " . $this->email . " | Telefone: " . $this->telefone . " | endereco: " . $this->endereco . " | id_estado: " . $this->id_estado. " | Nascimento: " . $this->nascimento. " | Imagem: " . $this->imagem. " | Cidade: " . $this->cidade. " | Usuario: " . $this->usuario . " | Senha: " . $this->senha;
-=======
-        return parent::__toString() . " | Email: " . $this->email . " | Telefone: " . $this->telefone . " | endereco: " . $this->endereco . " | id_estado: " . $this->id_estado. " | Nascimento: " . $this->nascimento. " | Cidade: " . $this->cidade. " | Usuario: " . $this->usuario . " | Senha: " . $this->senha;
->>>>>>> retiradocadastroconsumidor
     }
 
     public function buildFromObj($obj)
@@ -149,10 +136,7 @@ class Pessoa extends AbsClassCodigoNome
         $this->setEndereco($arr['endereco']);
         $this->setId_estado($arr['id_estado']);
         $this->setNascimento($arr['nascimento']);
-<<<<<<< HEAD
         $this->setImagem($arr['imagem']);
-=======
->>>>>>> retiradocadastroconsumidor
         $this->setCidade($arr['cidade']);
         $this->setUsuario($arr['usuario']);
         $this->setSenha($arr['senha']);

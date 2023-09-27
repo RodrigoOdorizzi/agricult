@@ -78,10 +78,6 @@ private function parseXML($response){
     if(!strlen($response)) return false;
 
     //carrega o xml para a classe
-<<<<<<< HEAD
-=======
-
->>>>>>> main
     $this->feed =  simplexml_load_string($response);
 //sucesso
   return true;

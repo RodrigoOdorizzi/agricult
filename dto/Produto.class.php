@@ -4,6 +4,7 @@ class Produto extends AbsClassCodigoNome
 
     private $preco;
     private $categoria;
+    private $fotoProduto;
     private $cod_vendedor;
       
 
@@ -29,6 +30,18 @@ class Produto extends AbsClassCodigoNome
 
 
 
+    public function getFotoProduto()
+    {
+                return $this->fotoProduto;
+    }
+
+    public function setFotoProduto($fotoProduto)
+    {
+        $this->fotoProduto =  $fotoProduto;
+    }
+
+
+
     public function getCod_vendedor()
     {
                 return $this->cod_vendedor;
@@ -42,7 +55,7 @@ class Produto extends AbsClassCodigoNome
 
     public function __toString()
     {
-        return parent::__toString() . " | Preco: " . $this->preco . " | Categoria: " . $this->categoria . " | cod_vendedor: " . $this->cod_vendedor;
+        return parent::__toString() . " | Preco: " . $this->preco . " | Categoria: " . $this->categoria . " | FotoProduto: " . $this->fotoProduto . " | cod_vendedor: " . $this->cod_vendedor;
     }
 
     public function buildFromObj($obj)
@@ -57,6 +70,7 @@ class Produto extends AbsClassCodigoNome
         $this->setNome($arr['nome']);
         $this->setPreco($arr['preco']);
         $this->setCategoria($arr['categoria']);
+        $this->setFotoProduto($arr['fotoProduto']);
         $this->setCod_vendedor($arr['cod_vendedor']);
       }
 }
