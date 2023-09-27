@@ -34,6 +34,8 @@ $consulta = isset($_POST['consulta']) ? $_POST['consulta'] : "";
 
 <body id="body">
     
+
+
 <section class="page-title bg-2">
     <div class="container">
         <div class="row">
@@ -60,6 +62,7 @@ if(isset($_POST['consulta'])){
 
 <section class="related-projects section-sm bg-gray">
  
+
     <div class="container">
         <div class="row" >
                <div class="col-md-12" > 
@@ -91,7 +94,12 @@ if(isset($_POST['consulta'])){
                             $pessoa->buildFromArray($linha);
 
                         ?>
-                        
+
+
+
+
+
+
 
 <div class="portfolio-item col-md-3" >
        

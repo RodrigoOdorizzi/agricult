@@ -78,10 +78,6 @@ a:hover {
 .block{
   text-align: center;
 }
-<<<<<<< HEAD
-=======
- 
->>>>>>> main
 blockquote {
   font-size: 18px;
   border-color: #655E7A;
@@ -180,12 +176,9 @@ input[type="tel"]:focus {
 
 .btn-m:hover {
   background-color: #ecc208;
-<<<<<<< HEAD
 }
 .btn-reg:hover{
   background-color: #00aced;
-=======
->>>>>>> main
 }
 
 
@@ -296,11 +289,8 @@ input[type="tel"]:focus {
 }
 
 .bg-primary {
-<<<<<<< HEAD
   margin:auto;
   width: 100%;
-=======
->>>>>>> main
   background: #e3ff12;
   color: #000;
 }
@@ -348,16 +338,10 @@ input[type="tel"]:focus {
 
 .section-title {
   margin-bottom: 70px; 
-<<<<<<< HEAD
-=======
-}
-.hom{
->>>>>>> main
 }
   
 
  
-
 
 .section-title.cad {
   margin-bottom: 70px;
@@ -915,11 +899,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
   color: #808080;
   padding: 10px 20px;
-<<<<<<< HEAD
     transition: all 0.5s ease;
-=======
-  transition: all 0.5s ease;
->>>>>>> main
 }
 
 .navigation .navbar .dropdown-menu a:hover {
@@ -1109,6 +1089,7 @@ font header .navbar-default .navbar-nav li a:hover {
 .portfolio-work {
   padding: 80px 0;
 }
+
 
 .portfolio-work .block .portfolio-menu {
   text-align: center;
@@ -2980,13 +2961,8 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
   padding-top: 18px;
   padding-bottom: 25px;
-<<<<<<< HEAD
   background-color:#d9ffe8;
    
-=======
-  background-color:#0afc6b;
-  color:#fff;
->>>>>>> main
 }
 
 .footer p {
