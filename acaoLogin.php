@@ -39,7 +39,7 @@ function logar($user, $senha)
 	session_start();
     
 
-	$sql = "SELECT * FROM " . $GLOBALS['tb_login'] .
+	$sql = "SELECT * FROM " .$GLOBALS['tb_login'] .
 		" WHERE usuario = '$user'";
 	$result = mysqli_query($GLOBALS['conexao'], $sql);
 	$senhaBD = "";
