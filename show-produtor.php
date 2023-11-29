@@ -93,9 +93,9 @@ if(isset($_POST['consulta'])){
                         ?>
                         
 
-<div class="portfolio-item col-md-3" >
+<div class="portfolio-item1 col-md-4 col-4 col-sm-4"   >
        
-<div class="portfolio col-md-12">
+<div class="portfolio col-md-12"  >
 <img style="max-height: 100px" src="<?php echo $pessoa->getImagem(); ?>">
 </div>
 

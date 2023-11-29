@@ -40,15 +40,14 @@ if(isset($_FILES['imagem'])){
      $nomeDoArquivo = $foto ['name'] ;
      $novoNomeArquivo = uniqid();
      $extencao = strtolower(pathinfo($nomeDoArquivo,PATHINFO_EXTENSION));
-     
      $caminho =  $pasta.$novoNomeArquivo.".".$extencao;
 
-     if($extencao != "jpg" && $extencao != 'png')
+     if($extencao != "jpg" || $extencao != 'png')
      die("formato inválido!");
  
      $imagemok = move_uploaded_file($foto["tmp_name"],$caminho);
   
-     if(   $imagemok ){
+     if( $imagemok ){
      echo "imagem enviada com sucesso  , <a target=\"_blank\"  href=\"images/$novoNomeArquivo.$extencao\"> $caminho</a>";
     
      inserir_pessoa($codigo);
@@ -82,7 +81,7 @@ function inserir_pessoa($codigo)
     $retorno   = $crud->insert($arrayPessoa);
 
   
-  //    header("location:cad-prod"); 
+     header("location:cadastro"); 
       return $retorno;
 }
 

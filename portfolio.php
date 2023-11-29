@@ -91,18 +91,8 @@ $consulta = $pdo->query("SELECT DISTINCT * FROM produto
                 <label class="btn btn-sm btn-primary active">
                   <input type="radio" name="shuffle-filter" value="outro"  />Outros
                 </label>
-
-
-
-                
-            
- 
- 
               </div>
             </div>
-
-
-
 
         <?php 
              $max = sizeof($fotoP);
@@ -115,8 +105,6 @@ $consulta = $pdo->query("SELECT DISTINCT * FROM produto
 
             <div class="row shuffle-wrapper">
           
-          
-          
             
             <?php 
   while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
@@ -126,12 +114,6 @@ $consulta = $pdo->query("SELECT DISTINCT * FROM produto
   $categorias[] = $produto->getCategoria();
   ?>
             
- 
-
-       
-          
-          
-          
             <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;'.$categorias[11].'&quot;]" style="background-color:#545454">
             <img style="max-height: 100px"  src="<?php echo $fotoP[1] ?>">
  

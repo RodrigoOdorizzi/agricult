@@ -1115,22 +1115,38 @@ font header .navbar-default .navbar-nav li a:hover {
 .portfolio-item {
   position: relative;
   padding: 0;
-
+ margin-bottom: 10px; 
 }
 
 
+.portfolio-item1 {
+  position: relative;
+  padding: 0;
+  margin-bottom: 10px; 
+}
+
 .portfolio-item img {
-  width: 50%;
+  width: 20%;
   height: auto;
-  border: #000;
-  border-style: solid;
+  border:1px #9b9999;
+  border-radius: 100%; 
 
   }
-.portfolio-item{
-  margin-right: 10px;
-  margin-bottom: 10px; 
-} 
+  
+.portfolio-item1 img {
+  width: 25%;
+  height: auto;
+  border:1px #9b9999;
+  border-radius: 40px;
+  border-style: solid;
+
+  } 
 .portfolio-item:hover .portfolio-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio-item1:hover .portfolio-hover {
   visibility: visible;
   opacity: 1;
 }
@@ -1161,8 +1177,8 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .portfolio-item:hover .portfolio-content1 {
-  -webkit-transform: translateY(-0%);
-  transform: translateY(-40%);
+  -webkit-transform: translateY(-20%);
+  transform: translateY(40%);
 }
 .portfolio-hover {
   position: absolute;
@@ -1200,7 +1216,6 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 150%;
   -webkit-transform: translateY(-40%);
   transform: translateY(-40%);
-
   transition: inherit;
 }
 

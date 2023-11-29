@@ -71,9 +71,9 @@ function inserir_produto($codigo)
     // Inseri os dados do usuário
 
     $arrayProduto = array('nome' => $produto->getNome(), 'preco' => $produto->getPreco(), 'categoria' => $produto->getCategoria(), 'fotoProduto' => $produto->getFotoProduto(), 'cod_vendedor' => $produto->getCod_vendedor());
-    $retorno   = $crud->insert($arrayProduto);
+    $retorno = $crud->insert($arrayProduto);
 
-	 header("location:cad-produto.php");
+	header("location:cad-produto.php");
 }
 
 
@@ -82,7 +82,6 @@ function editar_produto($codigo)
     $pdo = Conexao::getInstance();
     $crud = Crud::getInstance($pdo, 'produto');
     $produto = dadosForm_produto();
-
     $arrayProduto = array('nome' => $produto->getNome(), 'preco' => $produto->getPreco(), 'categoria' => $produto->getCategoria(), 'fotoProduto' => $produto->getFotoProduto(), 'cod_vendedor' => $produto->getCod_vendedor());
     $arrayCond = array('codigo=' => $codigo);
     $retorno   = $crud->update($arrayProduto, $arrayCond);
