@@ -8,7 +8,10 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
+.col-md-12>img{
+ 
+  
+}
 h1,
 h2,
 h3,
@@ -122,6 +125,10 @@ input[type="tel"]:focus {
 .slick-slide {
   outline: 0;
 }
+.btn-rounded{ 
+  border-radius: 5%; 
+font-size: 16px;padding:0 40px 0 40px;
+}
 
 .btn-green{background:	#25D366;
   color:#ffffff;
@@ -145,7 +152,8 @@ input[type="tel"]:focus {
   text-transform: uppercase;
   border-radius: 0;
   transition: all 0.2s ease;
-}
+} 
+
 
 .bnt-main-black{
   background:#000;
@@ -827,10 +835,19 @@ margin-top: 10px;
 
 header .navbar-default .navbar-nav li a {
   color: #333333;
-  padding: 10px 26px;
- 
+  padding: 10px 26px; 
   font-size: 15px;
 }
+
+.men>ul{
+  margin: auto;float: right;
+}
+.men>li{
+   float:right;
+  margin:auto;
+  padding: 0 10px 0 0;
+}
+
 .navbar-header{ 
   margin:auto;
   float:left;
@@ -868,6 +885,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 10px 15px;
   font-weight: 500;
   font-size: 16px;
+  text-align-last: center;
   text-transform: uppercase;
 }
 
@@ -896,10 +914,9 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .navigation .navbar .dropdown-menu a {
   font-weight:  bold;
-
   color: #808080;
   padding: 10px 20px;
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navigation .navbar .dropdown-menu a:hover {
@@ -911,13 +928,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .nav .open>a {
   background: transparent;
-}
-.men{ 
-  margin:auto 0; 
-  text-align: center;
-
-
-}
+} 
 
 
 .slider {
@@ -1159,10 +1170,6 @@ font header .navbar-default .navbar-nav li a:hover {
    
 } 
 
-.portfolio-nome.col-md-1{
-  
-
-}
 .portfolio-nome.col-md-11{
   margin-bottom: 20px;
    
@@ -1178,7 +1185,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .portfolio-item:hover .portfolio-content1 {
   -webkit-transform: translateY(-20%);
-  transform: translateY(40%);
+  transform: translateY(5%);
 }
 .portfolio-hover {
   position: absolute;
@@ -1214,9 +1221,11 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   margin-top: 20px;
   bottom: 150%;
-  -webkit-transform: translateY(-40%);
-  transform: translateY(-40%);
+  -webkit-transform: translateY(30%);
+  transform: translateY(-20%);
   transition: inherit;
+   
+
 }
 
 .portfolio-content1 a{
@@ -2586,6 +2595,12 @@ font header .navbar-default .navbar-nav li a:hover {
   display: flex;
   align-items: center;
   height: 100vh;
+}
+.table-dark{
+  background-color: #000;
+color:#fff; 
+border-radius: 90%;
+padding-top: 20px;
 }
 
 @media (max-width: 400px) {

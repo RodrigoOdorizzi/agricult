@@ -14,7 +14,7 @@ include 'valida.php';
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Aviato E-Commerce Template">
+    <meta name="description" content="Portal do agricultor">
 
     <meta name="author" content="Themefisher.com">
 

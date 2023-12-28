@@ -86,8 +86,11 @@ include 'header.php' ?>
 
                     <input type="file" name="fotoProduto" class="form-control"  accept="fotoProduto/*">    
                 
-                </div> 
-                    <div class="form-group">
+                </div>
+
+
+
+                <div class="form-group">
                             <input name="cod_vendedor" type="hidden" class="form-control" placeholder="Código do vendedor" value=<?php echo $_SESSION['codigo'] ?> >
                         </div>
 

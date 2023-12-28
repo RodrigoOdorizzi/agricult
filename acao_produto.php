@@ -92,10 +92,9 @@ function excluir_produto($codigo)
 {
     $pdo = Conexao::getInstance();
     $crud = Crud::getInstance($pdo, 'produto');
-
     $arrayCond = array('codigo=' => $codigo);
     $retorno   = $crud->delete($arrayCond);
-    header("location:index_produto.php");
+    header("location:meu-produto.php");
 }
 
 

@@ -64,4 +64,6 @@
 
         </div>
     </div>
+    <div id="ww_adff56ac66a6d"  v='1.3' loc='auto' a='{"t":"ticker","lang":"pt","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Mais previsões: <a href="https://oneweather.org/pt/lisbon/" id="ww_adff56ac66a6d_u" target="_blank">Lisboa tempo por hora</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_adff56ac66a6d"></script>
+     
 </header>
